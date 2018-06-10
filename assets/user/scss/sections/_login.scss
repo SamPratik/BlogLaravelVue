@@ -1,0 +1,55 @@
+/*--------------------
+    Login 
+----------------------*/
+
+.login-form-wrapper {
+    padding: 45px 50px 50px 50px;
+    .submit-form-btn {
+        margin: 0 auto;
+        display: block;
+        margin-top: 15px;
+        width: 200px;
+        background-color: #ff6c00;
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(255, 108, 0, .70);
+        }
+    }
+}
+
+.singup-form-wrapper {
+    padding: 45px 50px 50px 50px;
+    .submit-form-btn {
+        margin: 0 auto;
+        display: block;
+        margin-top: 15px;
+        background-color: #ff6c00;
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(255, 108, 0, .70);
+        }
+    }
+}
+
+.login-modal-navigation {
+    &.nav-tabs {
+        border-bottom: 1px solid #d4d4d4;
+    }
+    .nav-link {
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #8d8c9b;
+        width: 50%;
+        height: 60px;
+        line-height: 44px;
+        &:last-child {
+            border-radius: 0;
+            border-top-right-radius: .25rem;
+        }
+        &.active {
+            border: none;
+            background-color: $base-color;
+            color: $white;
+        }
+    }
+}

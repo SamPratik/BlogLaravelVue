@@ -1,0 +1,49 @@
+/*--------------------
+    Support Bar
+--------------------*/
+
+.support-bar {
+    background-color: $secondary-color;
+    .support-left {
+        padding: 10px 0;
+        ul {
+            li {
+                display: inline-block;
+                font-size: 14px;
+                padding: 0 17px;
+                &:first-child {
+                    padding-left: 0;
+                }
+                a {
+                    color: #8f8ea5;
+                    i{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .support-right {
+        text-align: right;
+        .social-links {
+            display: inline-block;
+            padding-right: 28px;
+            ul {
+                li {
+                    display: inline-block;
+                    font-size: 14px;
+                    padding: 0 5px;
+                    &:hover {
+                        a {
+                            color: $white;
+                        }
+                    }
+                    a {
+                        color: #8f8ea5;
+                        @include transition($transition);
+                    }
+                }
+            }
+        }
+    }
+}

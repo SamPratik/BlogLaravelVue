@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'User\PagesController@home')->name('users.home');
+Route::get('/about', 'User\PagesController@about')->name('users.about');

@@ -1,0 +1,60 @@
+/*--------------------
+    Contact 
+---------------------*/
+
+.contact-area {
+    .section-title {
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+    .contact-form-wrapper {
+        padding: 0 100px;
+        .submit-form-btn {
+            width: 200px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.contact-page{
+    padding-bottom: 247px; 
+    padding-top: 160px;
+} 
+.contact-form-inner {
+    box-shadow: 0px 8px 30px 0px rgba(138, 138, 138, 0.2);
+    padding: 110px 0 120px 0; // margin-top: -70px;
+    background-color: $white;
+    margin-top: -70px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+
+.singl-contact-info {
+    position: relative;
+    margin-bottom: 36px;
+    .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 50px;
+        line-height: 50px;
+        color: #005fe0;
+    }
+    .content {
+        padding-left: 85px;
+        h5 {
+            font-size: 26px;
+            line-height: 36px;
+            color: #131222;
+            font-weight: 700;
+        }
+        .details {
+            font-size: 16px;
+            color: #7d7c8f;
+            line-height: 26px;
+            display: block;
+        }
+    }
+}

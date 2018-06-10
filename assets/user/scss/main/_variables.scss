@@ -1,0 +1,81 @@
+/*------------------------
+	Css Indexing
+--------------------------
+** @typography
+--------------------------
+** Global css
+--------------------------
+** Breadcumb Area
+--------------------------
+** Preloader
+--------------------------
+** Normalize
+--------------------------
+** Navbar Area
+--------------------------
+** Header Area
+--------------------------
+** Support Bar
+--------------------------
+**  Live Token Sales
+--------------------------
+**  Explore Ico
+--------------------------
+**  Subscribe area
+--------------------------
+** Treanding Coin Offering
+--------------------------
+** Testimonial Area
+--------------------------
+** Sidebar 
+--------------------------
+** Login 
+--------------------------
+**  Footer Area
+--------------------------
+** About  Page
+--------------------------
+** Browse Ico
+--------------------------
+** Publish
+--------------------------
+** Blog Page
+--------------------------
+**  Details
+--------------------------
+**   Contact 
+--------------------------
+
+*/
+
+//== Template Main Color
+$base-color: #005fe0;
+$secondary-color: #131222;
+$bg-color:#f7f7f7;
+$white: #fff;
+//== heading color
+$heading-color: #131222;
+$descr-color: #7d7c8f;
+//== gradient color
+/*-----------------
+    @Typography
+-----------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+$body-font:'Open Sans',
+sans-serif;
+$base-font-size: 16px !default;
+$font-size-h1: 60px !default;
+$font-size-h2: 52px !default;
+$font-size-h3: 26px !default;
+$font-size-h4: 22px !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height: 1.6 !default; // 24/15
+// border-radius
+$border-radius-5: 5px !default;
+$border-radius-25: 25px !default;
+$border-radius-3: 3px !default;
+$border-radius-circle: 50% !default;
+//  transition
+$transition: all .3s ease-in;
+$transition-long: all .5s ease-in;
