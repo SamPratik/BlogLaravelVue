@@ -13,3 +13,4 @@
 
 Route::get('/', 'User\PagesController@home')->name('users.home');
 Route::get('/about', 'User\PagesController@about')->name('users.about');
+Route::get('/contact', 'User\PagesController@contact')->name('users.contact');
