@@ -101,6 +101,12 @@
                                                   <input type="email" placeholder="Type your email...." class="input-field-square">
                                               </div>
                                               <div class="form-element square">
+                                                  <label>Subject
+                                                      <span>**</span>
+                                                  </label>
+                                                  <input type="text" placeholder="Type your email subject...." class="input-field-square">
+                                              </div>
+                                              <div class="form-element square">
                                                   <label>Your Messages
                                                       <span>**</span>
                                                   </label>

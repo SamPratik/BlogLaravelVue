@@ -1,3 +1,4 @@
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,3 +24,7 @@
 <link rel="stylesheet" href="{{asset('assets/user/css/style.css')}}">
 <!-- responsive -->
 <link rel="stylesheet" href="{{asset('assets/user/css/responsive.css')}}">
+@stack('styles')
+
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

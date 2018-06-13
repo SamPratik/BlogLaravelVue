@@ -17,6 +17,7 @@
 <!-- counterup js-->
 <script src="{{asset('assets/user/js/jquery.counterup.min.js')}}"></script>
 
+
 <!-- main -->
 <script src="{{asset('assets/user/js/main.js')}}"></script>
 @if (session('success'))

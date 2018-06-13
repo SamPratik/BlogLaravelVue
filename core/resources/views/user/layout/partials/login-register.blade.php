@@ -1,4 +1,11 @@
-<div class="login-registration-modal">
+@push('styles')
+  <style media="screen">
+    .emReg {
+      color: red !important;
+    }
+  </style>
+@endpush
+<div class="login-registration-modal" id="loginRegCom">
     <div class="login-modal-wrapper"><!-- login modal warapper satart start-->
         <div class="modal" tabindex="-1" id="login-modal" role="dialog"><!-- #login modal-->
             <div class="modal-dialog" role="document">
@@ -14,7 +21,7 @@
                     <div class="tab-content" id="nav-tabContent"><!-- tab content-->
                         <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
                             <div class="login-form-wrapper"><!-- login form wrapper start -->
-                                <form action="index.html">
+                                <form>
                                     <div class="form-element square login"><!-- form element login start -->
                                         <label>Enter Email
                                             <span>**</span>
@@ -33,44 +40,57 @@
                         </div>
                         <div class="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
                             <div class="singup-form-wrapper">
-                                <form action="index.html">
+                                <form id="regForm" @submit.prevent="regUser">
+                                    <div id="regForm" onsubmit="regUser()" class="form-element square login">
+                                        <label>Username
+                                            <span>**</span>
+                                        </label>
+                                        <input type="text" name="username" placeholder="Type your username...." class="input-field-square" v-model="username">
+                                        <p class="text-danger" v-if="unExist">The username has already been taken.</p>
+                                        <p class="emReg text-danger"></p>
+                                    </div>
                                     <div class="form-element square login">
                                         <label>First Name
                                             <span>**</span>
                                         </label>
-                                        <input type="text" placeholder="Type your name...." class="input-field-square">
+                                        <input type="text" name="firstname" placeholder="Type your first name...." class="input-field-square">
+                                        <p class="emReg text-danger"></p>
                                     </div>
                                     <div class="form-element square login">
                                         <label>Last Name
                                             <span>**</span>
                                         </label>
-                                        <input type="text" placeholder="Type your name...." class="input-field-square">
+                                        <input type="text" name="lastname" placeholder="Type your last name...." class="input-field-square">
+                                        <p class="emReg text-danger"></p>
                                     </div>
                                     <div class="form-element square login">
                                         <label>Enter Email
                                             <span>**</span>
                                         </label>
-                                        <input type="email" placeholder="Type your email...." class="input-field-square">
+                                        <input type="email" name="email" placeholder="Type your email...." class="input-field-square">
+                                        <p class="emReg text-danger"></p>
                                     </div>
                                     <div class="form-element square login">
                                         <label>Enter Phone Number
                                             <span>**</span>
                                         </label>
-                                        <input type="email" placeholder="Type your email...." class="input-field-square">
+                                        <input type="text" name="phone" placeholder="Type your phone...." class="input-field-square">
+                                        <p class="emReg text-danger"></p>
                                     </div>
                                     <div class="form-element square login">
                                         <label>Password
                                             <span>**</span>
                                         </label>
-                                        <input type="password" placeholder="Type your email...." class="input-field-square">
+                                        <input type="password" name="password" placeholder="Type your password...." class="input-field-square">
+                                        <p class="emReg text-danger"></p>
                                     </div>
                                     <div class="form-element square login">
                                         <label>Confirm Password
                                             <span>**</span>
                                         </label>
-                                        <input type="email" placeholder="Type your email...." class="input-field-square">
+                                        <input type="password" name="password_confirmation" placeholder="Type your password again...." class="input-field-square">
                                     </div>
-                                    <input type="submit" class="submit-form-btn" value="submit for query">
+                                    <input type="submit" class="submit-form-btn" value="Register">
                                 </form>
                             </div>
                         </div>
@@ -80,3 +100,11 @@
         </div><!-- /#loginmodal -->
     </div><!-- login modal warapper satart end-->
 </div>
+
+@push('scripts')
+  <script>
+    var urlUsernames = '{{route('users.usernames')}}';
+    var urlReg = '{{route('users.register')}}';
+  </script>
+  <script src="{{asset('core/public/js/user/reg-login.js')}}"></script>
+@endpush
